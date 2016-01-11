@@ -1,5 +1,7 @@
 # ut_cpp
-cpp codes including test case and test coverage
+cpp codes including test case and test coverage.
+using gtest/gmock and lcov
+
 
 build
 ------------
