@@ -3,13 +3,6 @@
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
 
-using ::testing::_;
-using ::testing::SetArgPointee;
-using ::testing::DoAll;
-using ::testing::Return;
-using ::testing::Pointee;
-
-
 TEST(card_test, init)
 {
 

@@ -1,9 +1,4 @@
-#include <iostream>
-#include <string>
-
 #include "Card.h"
-
-
 
 Card::Card(int value, std::string name)
 {
