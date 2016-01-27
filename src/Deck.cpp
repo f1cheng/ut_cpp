@@ -1,5 +1,10 @@
 #include "Deck.h"
 
+void Deck::add2(Card card)
+{
+    _cards2.push_back(card);
+}
+
 void Deck::add(Card card)
 {
     _cards.push_back(card);
