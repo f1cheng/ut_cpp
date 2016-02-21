@@ -12,3 +12,6 @@ make all
 
 make report
 
+issue
+-----------
+grep -rn 'issue' to check issue which costs lots of time.

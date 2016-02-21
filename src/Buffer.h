@@ -19,6 +19,7 @@ public:
     void loadData();
     void registerStorage(Storage *storage);
     
+    void close_db();
 private:
     Storage *_store;
     std::map<std::string, std::string> _table;

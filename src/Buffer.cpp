@@ -47,3 +47,7 @@ void Buffer::loadData()
     _store->close();    
 }
 
+void Buffer::close_db()
+{
+    _store->close();
+}
