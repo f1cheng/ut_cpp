@@ -91,6 +91,12 @@ int main(int argc, char *argv[])
                     buffer.add(key, value);
                     serverSock << "+OK\n";
                     break;
+                case SAVE:
+                    if (token.size() != 1)
+                        goto invalid;
+                    buffer.dumpData();
+                    serverSock << "+OK\n";
+                    break;
 invalid:
                 default:
                     serverSock << "-INVALID\n";
