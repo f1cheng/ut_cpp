@@ -3,6 +3,7 @@
 #include "SignalInterrupt.h"
 #include "FileStorage.h"
 #include "Buffer.h"
+#include "SocketException.h"
 
 #include <iostream>
 #include <sstream>
@@ -54,6 +55,8 @@ int main(int argc, char *argv[])
     {
         ServerSocket serverSock;
         std::cout << "before accept\n";
+    try 
+    {
         server.accept(serverSock);
         std::cout << "after accept\n";
         while (true)
@@ -104,6 +107,12 @@ invalid:
             }
              
         }
+    }
+    catch (SocketException &e)
+    {
+		    std::cout <<"Exception was caught "<< e.detail() << "\n exiting \n";  
+    }
+
     } 
 
 }

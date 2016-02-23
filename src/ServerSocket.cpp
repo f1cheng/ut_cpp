@@ -1,12 +1,15 @@
 #include <iostream>
 #include "ServerSocket.h"
-
+#include "SocketException.h"
 
 ServerSocket::ServerSocket(int port)
 {
     if (!create())
     {
         std::cout << "create socket fail" << std::endl;
+
+        throw SocketException("Could not create the socket");
+
         return;
     }
     
@@ -51,6 +54,9 @@ void ServerSocket::accept(ServerSocket &serSock)
     if (!BaseSocket::accept(serSock))
     {
         std::cout << "could not accept socket" << std::endl;
+
+        throw SocketException("Could not accept the socket");
+
     }
 }
 

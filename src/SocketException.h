@@ -5,7 +5,7 @@
 class SocketException
 {
 public:
-    SocketException(std::string &str) : _str(str)
+    SocketException(std::string str) : _str(str)
     {
     }
     
