@@ -20,7 +20,7 @@ grep -rn 'issue' to check issue which costs lots of time.
 to do
 -----------
 1. add Exception class handler
-2. accept ssh and telent from client
+2. subscribe/publish mechanism
 3. muti processes or multi threads
 4. nonblock ways
 buffer->Stage?
